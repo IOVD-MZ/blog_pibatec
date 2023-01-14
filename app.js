@@ -55,7 +55,7 @@ const db = require('./config/db')
         defaultLayout: 'main',
         layoutsDir:__dirname+'/views/layouts'
       }));
-      
+    app.use(express.static('img'))
     //app.set("view engine", "hbs") //Engine HBS
     //app.set("views", __dirname +"/views") //Folder views (templates)
     //  app.engine('handlebars', engine());
@@ -87,7 +87,10 @@ const db = require('./config/db')
           res.redirect('/404')
       }) 
     })
-    
+    // Route to display static src images
+    app.get('/static', (req, res) => {
+      res.render("static");
+    });
     app.get('/postagem/:slug',(req,res)=>{
       Postagem.findOne({slug: req.params.slug}).lean().then((postagem)=>{
         if(postagem){

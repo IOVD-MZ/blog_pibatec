@@ -1,13 +1,15 @@
-<div class="jumbotron" style="background: rgb(238, 237, 237);padding: 20px;" >
-  <h1 class="display-4">Bem vindo ao blog da PIBATEC</h1>
-  <p class="lead">Este e' um BLOG simples , desenvolvido com Node.js + Express + MongoDB.</p>
-  <hr class="my-4">
-  <p>Aqui voce vai poder ler sobre as novidades do mundo da computação.</p>
+<div class="jumbotron" style="background: white ;color: #2b3035;padding: 20px;" >
+  <br><br>
+  
+  <h1 class="display-4 mt-4">Bem vindo a plataforma de publicidade</h1>
+  <p class="lead" style="text-indent: inherit;">Esta é a sua plataforma de publicação de produtos, serviços, habilidades profissionais de diversas áreas, como assistentes técnicos, professores, mecânicos, consultores, designers, pedreiros, eletricistas, psicólogos e muito mais. ... </p>
+  {{!-- <hr class="my-4"> --}}
+  <p style="color: #245714;">Publique o seu contributo para tornar o mundo melhor.</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/usuarios/registo" role="button">Crie uma conta</a>
+    <a class="btn btn-danger btn-lg" href="/usuarios/registo"  role="button">Crie uma conta</a>
   </p>
 </div>
-<hr>
+
 <h2>Postagens recentes</h2>
 
 {{#each postagens}}
@@ -23,6 +25,7 @@
         <small>Data de Publicação: {{data}}</small>
         
     </div>
+    
 </div>
 
 {{else}}
