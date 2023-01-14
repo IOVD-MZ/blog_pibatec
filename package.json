@@ -8,7 +8,7 @@
     "start": "node app.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "production": "pm2 start src/app.js --name todo-app"
+    "production": "pm2 start app.js --name todo-app"
   },
   "keywords": [],
   "author": "",
