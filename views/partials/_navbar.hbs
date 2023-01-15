@@ -1,70 +1,26 @@
 {{!-- Cabeçalho do meu projecto --}}
-<nav class="navbar  navbar-expand-lg bg-body-tertiary navbar-dark bg-dark fixed-top" data-bs-theme="dark">
-  
-  <div class="container-fluid">
-    <img src="img/logo-pibatec.png" alt="" class="card-img-top" style="width: 80px;border-radius: 40px;">
-    <a id="liveToastBtn" class="navbar-brand" href="/">PIBATEC POST</a>
-    
+<nav class="menu  navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
 
-  <div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="..." class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    <div class="container-fluid">
+        {{!-- <img src="img/logo-pibatec.png" alt="" class="card-img-top" style="width: 80px;border-radius: 40px;"> --}}
+        {{!-- <a class="navbar-brand" href="/">PIBATEC POST</a> --}}
+
+        <div class="logo">
+            <h1>Consultoria de Informática</h1>
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/categorias">Categoria</a>
+            {{!-- user: nossa variavel global --}}
+            {{!-- Se o user estiver logado nao mostrar se nao mostrar o menu Login e Registo --}}
+            {{#if user}}
+            <a href="/usuarios/logout">Logout</a>
+            {{else}}
+            <a href="/usuarios/login">Login</a>
+            <a href="/usuarios/registo">Registo</a>
+            <a id="botao" href="#">Fale Conosco</a>
+            {{/if}}
+        </div>
+
     </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/categorias">Categorias</a>
-        </li>
-        {{!-- user: nossa variavel global  --}}
-        {{!-- Se o user estiver logado nao mostrar se nao mostrar o menu Login e Registo --}}
-        {{#if user}}
-          <li class="nav-item">
-            <a class="nav-link" href="/usuarios/logout">Logout</a>
-          </li>
-        {{else}}
-        <li class="nav-item">
-          <a class="nav-link" href="/usuarios/login">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/usuarios/registo">Registo</a>
-        </li>
-
-        {{/if}}
-      </ul>
-       
-    </div>
-  </div>
 </nav>
-<script>
-    const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
-
-</script>
