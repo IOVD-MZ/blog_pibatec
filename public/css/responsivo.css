@@ -11,7 +11,7 @@
         text-align: left;
     }
     .logo h1{
-        font-size: 12px;
+        font-size: 9px;
         text-align: center;
     }
     .header{
@@ -23,6 +23,11 @@
     }
     .headline p{
         text-align: justify;
+    }
+    .headline h2{
+
+        font-size: 10px;
+       
     }
     .img-headline{
         flex: 100%;
