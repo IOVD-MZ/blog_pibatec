@@ -29,7 +29,7 @@ body{
 .logo h1{
     font-family: 'Lobster', cursive;
     color: #180F4A;
-    font-size: 60px;
+    font-size: 20px;
 }
 .menu{
     flex: 70%;
