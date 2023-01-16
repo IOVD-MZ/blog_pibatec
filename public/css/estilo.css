@@ -76,6 +76,7 @@ body{
     flex: 40%;
     margin-left: 10%;
     /* border: 1px solid black; */
+    text-align: justify;
 }
 .headline h2{
     font-weight: 900;
