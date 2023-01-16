@@ -8,7 +8,7 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-.navbar{
+.navbar-estilo{
     display: flex;
     flex-flow: row wrap;
     height: 100px;
@@ -20,34 +20,34 @@ body{
     position: fixed;
     width: 100%;
 }
-.logo{
+.logo-estilo{
     flex: 20%;
     margin-left: 10%;
     /* border: 1px solid red;  */
     text-align: left;
 }
-.logo h1{
+.logo-estilo h1{
     font-family: 'Lobster', cursive;
     color: #180F4A;
     font-size: 20px;
 }
-.menu{
+.menu-estilo{
     flex: 70%;
     /* border: 1px solid green; */
     text-align: right;
     padding: 20px;
 }
-.menu a{
+.menu-estilo a{
     color:#180F4A;
     text-decoration: none;
     font-size: 20px;
     padding: .20px 16px;
 }
-.menu a:hover{
+.menu-estilo a:hover{
     color: #FF2978;
     border-top: 4px solid#180F4A;
 }
-#botao{
+#botao-estilo{
     background: #180F4A;
     padding: 10px 25px;
     color: white;
@@ -55,11 +55,11 @@ body{
     margin-right: 10%;
     margin-left: 5%;
 }
-#botao:hover{
+#botao-estilo:hover{
     border: none;
     background: #FF2978;
 }
-.header{
+.header-estilo{
     display: flex;
     flex-flow: row wrap;
     /* height: 600px; */
@@ -72,27 +72,27 @@ body{
     border: 1px solid deeppink; 
     border-radius: 40px;
 }
-.headline{
+.headline-estilo{
     flex: 40%;
     margin-left: 10%;
     /* border: 1px solid black; */
     
 }
-.headline h2{
+.headline-estilo h2{
     font-weight: 900;
     font-size: 20px;
     color: #180F4A;
     padding: 0;
     margin: 0;
 }
-.headline p{
+.headline-estilo p{
     color: gray;
     /* text-align: left; */
     text-align: justify;
 
     
 }
-.contact-btn{
+.contact-btn-estilo{
     color: white;
     display: inline-block;
     background: #FF2978;
@@ -101,10 +101,10 @@ body{
     border-radius: 5px;
     text-decoration: none;
 }
-.contact-btn:hover{
+.contact-btn-estilo:hover{
     background-color: #180F4A;
 }
-.img-headline{
+.img-headline-estilo{
     margin-right: 10%;
     flex: 40%;
     /* border: 1px solid deeppink; 
@@ -116,13 +116,13 @@ body{
     
 }
 
- .img-headline:hover{
+ .img-headline-estilo:hover{
     opacity: 0.5;
     cursor: pointer;
     font-size: 50px;
     
 } 
-.section{
+.section-estilo{
     display: inline-block;
     margin-top: 80px;
     /* border: 1px solid black; */
@@ -132,7 +132,7 @@ body{
     /* width: 90%; */
     text-align: center;
 }
-.section h2{
+.section-estilo h2{
     width: 100%;
     font-size: 50px;
     margin: 0;
@@ -141,11 +141,11 @@ body{
     color: #180F4A;
     font-family: 'Lobster', cursive;
 }
-.servicos{
+.servicos-estilo{
     display: inline-block;
     margin-top: 5%;
 }
-.card{
+.card-estilo{
     display: inline-block;
     width: 30%;
     padding: 20px;
@@ -154,24 +154,24 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
-.texto-oculto{
+.texto-oculto-estilo{
     display: none;
 }
-.card:hover{
+.card-estilo:hover{
     background: #FF2978;
     color: white;
     padding: 40px;
 }
-.card:hover img{
+.card-estilo:hover img{
     display: none;
 }
-.card:hover .card-text{
+.card-estilo:hover .card-text{
     display: none;
 }
-.card:hover .texto-oculto{
+.card-estilo:hover .texto-oculto{
     display: block;
 }
-footer{
+footer-estilo{
     
     margin-top: 100px;
     height: 400px;
@@ -180,15 +180,15 @@ footer{
     text-align: center;
     border-top: 5px solid #FF2978;
 }
-.logo-rodape{
+.logo-rodape-estilo{
     padding: 100px;
 }
-.agencia{
+.agencia-estilo{
     font-family: 'Lobster', cursive;
     color: white;
     font-size: 34px;
 }
-.whats{
+.whats-estilo{
     
     position: fixed;
     bottom: 5px;
@@ -196,6 +196,6 @@ footer{
 
     
 }
-.whats:hover{
+.whats-estilo:hover{
     opacity: 0.5;
 }

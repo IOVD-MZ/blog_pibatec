@@ -1,41 +1,41 @@
 @media screen and (max-width:1005px){
-    .navbar{
+    .navbar-estilo{
         position: relative;
     }
     /* O menu desapareça e o logo centralizado */
-    .menu{
+    .menu-estilo{
         display: none;
     }
-    .logo{
+    .logo-estilo{
         margin: 0;
         text-align: left;
     }
-    .logo h1{
+    .logo-estilo h1{
         font-size: 15px;
         text-align: center;
     }
-    .header{
+    .header-estilo{
         padding-top: 50px;
     }
     /* Vai ocupar o tamanho total */
-    .headline{
+    .headline-estilo{
         flex: 100%;
     }
-    .headline p{
+    .headline-estilo p{
         text-align: justify;
     }
-    .headline h2{
+    .headline-estilo h2{
 
         font-size: 10px;
        
     }
-    .img-headline{
+    .img-headline-estilo{
         flex: 100%;
         margin: 5%;
         text-align: center;
         font-size: 40px;
     }
-    .card{
+    .card-estilo{
         width: 100%;
     }
 }
