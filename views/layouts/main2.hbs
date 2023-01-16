@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIBATEC</title>
+    <meta name="description" content="Consultoria de Informatica">
+    <meta name="keywords" content="Consultoria de informatica,Agência Digital , desenvolvimento de software,redes de computadores,LAN,WAN">
+    {{!-- <link rel="stylesheet"  href="/public/css/estilo.css">
+    <link rel="stylesheet"  href="/public/css/responsivo.css"> --}}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    /* Serve para incorporar padding, margin todos numa caixa */
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+
+    /* fixar o menu */
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    /* border: 1px solid red;  */
+    text-align: left;
+}
+.logo h1{
+    font-family: 'Lobster', cursive;
+    color: #180F4A;
+    font-size: 34px;
+}
+.menu{
+    flex: 70%;
+    /* border: 1px solid green; */
+    text-align: right;
+    padding: 20px;
+}
+.menu a{
+    color:#180F4A;
+    text-decoration: none;
+    font-size: 20px;
+    padding: .20px 16px;
+}
+.menu a:hover{
+    color: #FF2978;
+    border-top: 4px solid#180F4A;
+}
+#botao{
+    background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+#botao:hover{
+    border: none;
+    background: #FF2978;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    /* height: 600px; */
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 100px;
+
+
+    border: 1px solid deeppink; 
+    border-radius: 40px;
+}
+.headline{
+    flex: 40%;
+    margin-left: 10%;
+    /* border: 1px solid black; */
+}
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+.headline p{
+    color: gray;
+    text-align: left;
+
+    
+}
+.contact-btn{
+    color: white;
+    display: inline-block;
+    background: #FF2978;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.contact-btn:hover{
+    background-color: #180F4A;
+}
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid deeppink; 
+    border-radius: 40px; */
+    text-align: center;
+    font-size: 30px;
+    color: #FF2978;
+    font-family: 'Lobster', cursive;
+    
+}
+
+.img-headline:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
+.section{
+    display: inline-block;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    padding: 5%;
+    /* height: 400px; */
+    /* width: 90%; */
+    text-align: center;
+}
+.section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+
+    font-weight: bold;
+    color: #180F4A;
+    font-family: 'Lobster', cursive;
+}
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #180F4A;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.texto-oculto{
+    display: none;
+}
+.card:hover{
+    background: #FF2978;
+    color: white;
+    padding: 40px;
+}
+.card:hover img{
+    display: none;
+}
+.card:hover .card-text{
+    display: none;
+}
+.card:hover .texto-oculto{
+    display: block;
+}
+footer{
+    
+    margin-top: 100px;
+    height: 400px;
+    
+    background-image: linear-gradient(180deg,#180F4A,#090422,black);
+    text-align: center;
+    border-top: 5px solid #FF2978;
+}
+.logo-rodape{
+    padding: 100px;
+}
+.agencia{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 34px;
+}
+.whats{
+    
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+
+    
+}
+.whats:hover{
+    opacity: 0.5;
+}
+{{!-- ....................................... --}}
+
+
+
+@media screen and (max-width:1005px){
+    .navbar{
+        position: relative;
+    }
+    /* O menu desapareça e o logo centralizado */
+    .menu{
+        display: none;
+    }
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+    .header{
+        padding-top: 50px;
+    }
+    /* Vai ocupar o tamanho total */
+    .headline{
+        flex: 100%;
+    }
+    .headline p{
+        text-align: center;
+    }
+    .img-headline{
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+}
+    </style>
+
+</head>
+<body>
+    
+        
+
+    {{!-- Cabeçalho do meu projecto --}}
+    {{!-- {{>_navbar}}  --}}
+
+    <nav class="navbar">
+
+    <div class="container-fluid">
+        {{!-- <img src="img/logo-pibatec.png" alt="" class="card-img-top" style="width: 80px;border-radius: 40px;"> --}}
+        {{!-- <a class="navbar-brand" href="/">PIBATEC POST</a> --}}
+
+        <div class="logo">
+            <h1>Consultoria de Informática</h1>
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/categorias">Categoria</a>
+            {{!-- user: nossa variavel global --}}
+            {{!-- Se o user estiver logado nao mostrar se nao mostrar o menu Login e Registo --}}
+            {{#if user}}
+            <a href="/usuarios/logout">Logout</a>
+            {{else}}
+            <a href="/usuarios/login">Login</a>
+            <a href="/usuarios/registo">Registo</a>
+            <a id="botao" href="#">Fale Conosco</a>
+            {{/if}}
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+    <div class="container mt-4">  
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{else}}
+
+        {{/if}}
+
+
+        {{>_msg}} 
+        {{{body}}}
+        <br>
+        <br><br>
+    </div>
+    {{!-- {{>_rodape}} --}}
+
+
+
+    <footer>
+        <div class="logo-rodape">
+            <h2 class="agencia">Consultoria de Informática</h2>
+            <p style="color: white;">Mozambique || Nacala Porto</p>
+        </div>
+        <b style="color:white ;">© Todos os direitos reservados.</b>
+    </footer>
+    <a class="whats" href="https://api.whatsapp.com/send?phone=55868815644" target="_blank">
+        <img style="width: 100px;"  src="img/whats.png" alt="">
+    </a>
+</body>
+</html>
