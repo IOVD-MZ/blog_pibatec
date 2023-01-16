@@ -76,7 +76,7 @@ body{
     flex: 40%;
     margin-left: 10%;
     /* border: 1px solid black; */
-    text-align: justify;
+    
 }
 .headline h2{
     font-weight: 900;
@@ -87,7 +87,8 @@ body{
 }
 .headline p{
     color: gray;
-    text-align: left;
+    /* text-align: left; */
+    text-align: justify;
 
     
 }
