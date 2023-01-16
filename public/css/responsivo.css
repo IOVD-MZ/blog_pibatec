@@ -8,7 +8,7 @@
     }
     .logo{
         margin: 0;
-        text-align: justify;
+        text-align: left;
     }
     .header{
         padding-top: 50px;
@@ -24,6 +24,7 @@
         flex: 100%;
         margin: 5%;
         text-align: center;
+        font-size: 40px;
     }
     .card{
         width: 100%;
