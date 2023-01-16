@@ -248,10 +248,42 @@ footer{
 </head>
 <body>
     
-    {{>_navbar}}     
+        
 
     {{!-- Cabeçalho do meu projecto --}}
- 
+    {{!-- {{>_navbar}}  --}}
+
+    <nav class="navbar">
+
+    <div class="container-fluid">
+        {{!-- <img src="img/logo-pibatec.png" alt="" class="card-img-top" style="width: 80px;border-radius: 40px;"> --}}
+        {{!-- <a class="navbar-brand" href="/">PIBATEC POST</a> --}}
+
+        <div class="logo">
+            <h1>Consultoria de Informática</h1>
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/categorias">Categoria</a>
+            {{!-- user: nossa variavel global --}}
+            {{!-- Se o user estiver logado nao mostrar se nao mostrar o menu Login e Registo --}}
+            {{#if user}}
+            <a href="/usuarios/logout">Logout</a>
+            {{else}}
+            <a href="/usuarios/login">Login</a>
+            <a href="/usuarios/registo">Registo</a>
+            <a id="botao" href="#">Fale Conosco</a>
+            {{/if}}
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+
+
 
 
     <div class="container mt-4">  
@@ -267,6 +299,19 @@ footer{
         <br>
         <br><br>
     </div>
-    {{>_rodape}}
+    {{!-- {{>_rodape}} --}}
+
+
+
+    <footer>
+        <div class="logo-rodape">
+            <h2 class="agencia">Consultoria de Informática</h2>
+            <p style="color: white;">Mozambique || Nacala Porto</p>
+        </div>
+        <b style="color:white ;">© Todos os direitos reservados.</b>
+    </footer>
+    <a class="whats" href="https://api.whatsapp.com/send?phone=55868815644" target="_blank">
+        <img style="width: 100px;"  src="img/whats.png" alt="">
+    </a>
 </body>
 </html>
