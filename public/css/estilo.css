@@ -110,7 +110,7 @@ body{
     /* border: 1px solid deeppink; 
     border-radius: 40px; */
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     color: #FF2978;
     font-family: 'Lobster', cursive;
     
@@ -119,6 +119,7 @@ body{
 .img-headline:hover{
     opacity: 0.5;
     cursor: pointer;
+    font-size: 9px;
     
 }
 .section{
