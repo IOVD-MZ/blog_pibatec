@@ -116,12 +116,12 @@ body{
     
 }
 
-/* .img-headline:hover{
+ .img-headline:hover{
     opacity: 0.5;
     cursor: pointer;
-    font-size: 9px;
+    font-size: 50px;
     
-} */
+} 
 .section{
     display: inline-block;
     margin-top: 80px;
