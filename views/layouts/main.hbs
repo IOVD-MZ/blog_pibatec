@@ -22,24 +22,7 @@
 
 <body>
     
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Consultoria de Informática</h1>
-        </div>
-        <div class="menu">
-            <a href="/">Home</a>
-            <a href="/categorias">Categoria</a>
-            {{!-- user: nossa variavel global --}}
-            {{!-- Se o user estiver logado nao mostrar se nao mostrar o menu Login e Registo --}}
-            {{#if user}}
-            <a href="/usuarios/logout">Logout</a>
-            {{else}}
-            <a href="/usuarios/login">Login</a>
-            <a href="/usuarios/registo">Registo</a>
-            <a id="botao" href="#">Fale Conosco</a>
-            {{/if}}
-        </div>
-    </nav>
+    {{_navbar}}
     
     <header class="header">
         
@@ -100,7 +83,7 @@
             <h2 class="agencia">Consultoria de Informática</h2>
             <p style="color: white;">Mozambique || Nacala Porto</p>
         </div>
-        <b style="color:white ;">© Todos os direitos reservados.</b>
+        <b style="color:white ;">© Todos os direitos reservados, desenvolvido por PIBATEC</b>
     </footer>
     <a class="whats" href="https://api.whatsapp.com/send?phone=+258868815644" target="_blank">
         <img style="width: 100px;"  src="img/whats.png" alt="">
