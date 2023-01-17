@@ -38,6 +38,9 @@
     .section-estilo h2{
         font-size: 30px;
     }
+    .section-estilo p{
+        text-align: justify;
+    }
     .section-estilo{
     display: inline-block;
     margin-top: 0px;
@@ -46,12 +49,12 @@
     padding: 5%;
     /* height: 400px; */
     /* width: 90%; */
-    text-align: justify;
+    text-align: center;
 }
     .card-estilo{
         width: 100%;
     }
-
+    
     .logo-rodape h2{
         font-size: 12px;
     }
