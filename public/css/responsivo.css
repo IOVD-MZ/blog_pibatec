@@ -46,13 +46,13 @@
     padding: 5%;
     /* height: 400px; */
     /* width: 90%; */
-    text-align: center;
+    text-align: justify;
 }
     .card-estilo{
         width: 100%;
     }
 
     .logo-rodape h2{
-        font-size: 15px;
+        font-size: 12px;
     }
 }
