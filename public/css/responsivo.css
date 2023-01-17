@@ -42,8 +42,9 @@
         width: 100%;
     }
 
-    footer{    
-        margin-top: 50px;
-        height: 200px;
+    footer{
+    
+        font-size: 15px;
+        text-align: center;
     }
 }
