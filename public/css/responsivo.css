@@ -42,9 +42,7 @@
         width: 100%;
     }
 
-    footer{
-    
-        font-size: 15px;
-        text-align: center;
+    .logo-rodape h2{
+        font-size: 20px;
     }
 }
