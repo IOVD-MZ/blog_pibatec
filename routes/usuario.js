@@ -6,6 +6,18 @@ require('../models/Usuario')
 const Usuario = mongoose.model('usuarios')
 const bcryptjs = require('bcryptjs')
 const passport = require('passport')
+const path = require('path') // Modulo para manipular diretórios/pastas
+
+
+
+//public : pasta de arquivos estáticos
+app.use(express.static(path.join(__dirname,"/public"))) //estamos informando ao express que a pasta public guarda os arquivos estáticos
+//__dirname: caminho absoluto para evitar erros
+
+// Route to display static src images
+    app.get('/static', (req, res) => {
+      res.render("static");
+    });
 
 router.get('/registo',(req,res)=>{
      res.render('usuarios/registo')
